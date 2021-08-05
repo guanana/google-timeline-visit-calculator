@@ -20,13 +20,13 @@ I spent outside the country. I created this tool to aid me with that task but
 it can be use for multiple other applications
 
 ## How it works?
-###Get your data together
+### Get your data together
 You go to [Google](https://takeout.google.com/settings/takeout) and ask for the export.
 You'll get a huge (or not) json file with all your location history
 
 ![Google Takeout file example](https://github.com/guanana/google-timeline-visit-calculator/blob/main/img/Google_Timeline_Export.png?raw=true)
 
-###Parse your data 
+### Parse your data 
 Once you get the file you need to parse it for it to be processed.
 Run `python parse_json.py --help` to get all the possible options, ie:
 ```shell
@@ -51,7 +51,7 @@ optional arguments:
                         If you only care about data collected with specific source, like GPS, CELL, WIFI
 
 ```
-###Process your data
+### Process your data
 Once you have your output file you just need to run the main.py file with the parameters required,
 again please run `python main.py --help` to see all possible options
 ```shell
