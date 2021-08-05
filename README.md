@@ -24,7 +24,7 @@ it can be use for multiple other applications
 You go to [Google](https://takeout.google.com/settings/takeout) and ask for the export.
 You'll get a huge (or not) json file with all your location history
 
-![Google Takeout file example](https://github.com/guanana/google-timeline-visit-calculator/img/Google_Timeline_Export.png)
+![Google Takeout file example](https://github.com/guanana/google-timeline-visit-calculator/blob/main/img/Google_Timeline_Export.png?raw=true)
 
 ###Parse your data 
 Once you get the file you need to parse it for it to be processed.
@@ -76,5 +76,5 @@ If you've done all correctly you should get an output on the screen and a output
 If you want to analize the data in a more readable way or work with it any Json Parser will do the job
 
 
-![Output](https://github.com/guanana/google-timeline-visit-calculator/img/Json_output.png)
+![Output](https://github.com/guanana/google-timeline-visit-calculator/blob/main/img/Json_output.png?raw=true)
 
