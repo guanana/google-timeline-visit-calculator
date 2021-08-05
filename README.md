@@ -15,11 +15,11 @@ I'm aware there are some tools already out there to do similar things
 but I couldn't fine any that would calculate the time I spent in each country.
 
 I wanted to do something with the data Google collects from me and use it
-for my own profit. For an immigration paperwork I need to provide proof of all time spent
-I spent outside the country. I created this tool to aid me with that task but
+for my own benefit. I need, for an immigration paperwork to provide proof of all time spent
+I spent outside the country. I created this tool to help me with that task but
 it can be use for multiple other applications
 
-## How it works?
+## How does it work?
 ### Get your data together
 You go to [Google](https://takeout.google.com/settings/takeout) and ask for the export.
 You'll get a huge (or not) json file with all your location history
