@@ -8,6 +8,7 @@ Allows you to get a general overview about how much time you spent in a country,
 - Filter visits base on distance radius
 - Keep track of all the visits made to different countries
 - Summary of all visits, total time in each country (stdout and json file)
+- Create automatic Google Calendar Links to add your visits into your calendar
 
 ## Why?
 
