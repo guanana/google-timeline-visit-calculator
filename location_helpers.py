@@ -30,8 +30,8 @@ def get_details(geo_location, raw_data, coord, country_code):
 
 def get_location(point):
     # Avoid possible overload of Nominatim service
-    time.sleep(1.5)
-    geo_location = geolocator.reverse(point, timeout=10)
+    time.sleep(1.3)
+    geo_location = geolocator.reverse(point, timeout=15)
     try:
         country_code = geo_location.raw["address"]["country_code"]
     except (ValueError, AttributeError):

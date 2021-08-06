@@ -79,8 +79,8 @@ def main():
             Timeline.add_visit_to_timeline(my_timeline, visit_object)
 
         geo_location, country_code = location_helpers.get_location(point)
-        my_timeline.add_country(country_code)
-        visit_object = Visits.new_visit(raw_data["timestamp"], country_code, point, args.radius)
+        country_object = my_timeline.add_country(country_code)
+        visit_object = Visits.new_visit(raw_data["timestamp"], country_object, point, args.radius)
         country_name, city, postcode = location_helpers.get_details(geo_location, raw_data, point, country_code)
         visit_object.add_details(country_name, city, postcode)
         xrecords = 1
