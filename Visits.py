@@ -1,6 +1,6 @@
 from datetime import datetime
-
 from geopy import distance
+from google_calendar import create_link
 
 
 class Visits:
@@ -14,6 +14,7 @@ class Visits:
         self.records = 1
         self.country = country
         self.radius = radius
+        self.visit_link = ""
 
     def __str__(self):
         return f"\n---\n" \
@@ -21,6 +22,7 @@ class Visits:
                f"City: {self.city}\n" \
                f"Arrival: {datetime.fromtimestamp(self.initial_date)}({self.initial_date})\n" \
                f"Departure: {datetime.fromtimestamp(self.final_date)}({self.final_date})\n" \
+               f"Google Calendar Link: {self.visit_link}" \
                f"---"
 
     def start_count(self, timestamp):
@@ -28,6 +30,7 @@ class Visits:
 
     def stop_count(self, timestamp):
         self.final_date = timestamp
+        self.visit_link = create_link(self)
 
     def add_records(self, xtimes):
         self.records = xtimes
@@ -44,7 +47,6 @@ class Visits:
         self.city = city
         self.postcode = postcode
         self.country_name = country_name
-
 
 def new_visit(timestamp, new_country, point, radius):
     new_visit_object = Visits(new_country, point, radius)
